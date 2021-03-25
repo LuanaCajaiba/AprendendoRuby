@@ -45,14 +45,17 @@ puts h
 h << 7 #esse operador << permite inserir um novo valor a array
 puts h
 
-puts "string".object_id #o objetct_id tratá um número aleatório a variável
+puts "string".object_id #o objetct_id tratá a posição de memória onde está armazenada a variável
 puts "string".object_id
 puts :symbol.object_id #diferente do string, o symbol não será mutável
 puts :symbol.object_id
 
+#hash
 i = {
     cores: ["Azul", "Vermelho", "Preto"],
     frutas: ["Pêra", "Uva", "Maçã"]
 }
-
 puts i [:frutas]
+
+pontuacao_hash = { Nota1: 10, Nota2: 8, Nota3: 9}
+puts pontuacao_hash[:Nota1]
