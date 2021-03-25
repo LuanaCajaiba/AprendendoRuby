@@ -7,3 +7,7 @@ puts "Olá, mundo!"
 puts = com quebra de linhas
 put = sem quebra de linha
 =end
+
+print "Digite seu nome: "
+name = gets.chomp
+puts "Hello, #{name}!"
