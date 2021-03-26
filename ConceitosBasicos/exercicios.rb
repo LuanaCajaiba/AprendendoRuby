@@ -121,11 +121,25 @@ puts "O salário reajustado é #{salario * i}"
 #Questão 1.15 Crie um script em Ruby que leia o preço de um produto e um percentual de desconto. 
 #O script deve calcular e mostrar o novo preço do produto com o desconto.
 
+preco = gets.chomp.to_f
+porcentagem_desconto = gets.chomp.to_f
+desconto = preco * porcentagem_desconto/100
+valor_final = preco - desconto
+puts "O valor com desconto é #{valor_final}"
+
+
+
 #Questão 1.16 Crie um script em Ruby que leia um valor real em dólar e converta o valor para reais. Considere que a cotação é US$ 1 = R$ 3,20.
+
+real = gets.chomp.to_f
+dolar = real * 3.20
+puts "#{real} reais equivale a #{dolar} dolares"
 
 #Questão 1.17 Crie um script em Ruby que leia uma distância (em Km) entre dois pontos e o preço da gasolina em reais. 
 #Depois, calcule e mostre quantos litros de gasolina o carro irá consumir e quanto será o gasto em reais. 
 #Considere que o carro consegue percorrer 12 Km com um litro de gasolina.
+
+
 
 #Questão 1.18 Crie um script em Ruby que leia a distância a ser percorrida e a velocidade média de um veículo. 
 #O script deve calcular e mostrar o tempo em que o veículo chegará ao seu destino.
