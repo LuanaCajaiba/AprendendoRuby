@@ -1,5 +1,6 @@
 #Questão 1.1 - Crie um script em Ruby que leia um número inteiro e mostre seu sucessor.
 
+
 print "Insisra um número: "
 a = gets.chomp.to_i 
 puts "O sucessor desse número é #{a + 1}"
@@ -135,11 +136,20 @@ real = gets.chomp.to_f
 dolar = real * 3.20
 puts "#{real} reais equivale a #{dolar} dolares"
 
+
+
 #Questão 1.17 Crie um script em Ruby que leia uma distância (em Km) entre dois pontos e o preço da gasolina em reais. 
 #Depois, calcule e mostre quantos litros de gasolina o carro irá consumir e quanto será o gasto em reais. 
 #Considere que o carro consegue percorrer 12 Km com um litro de gasolina.
 
-
+print "Insira uma distância em Km entre dois pontos: "
+distancia = gets.chomp.to_f
+print "Insira o preço da gasolina em reais: "
+preco = gets.chomp.to_f
+litros_consumidos = distancia / 12
+puts "O valor de litros consumidos em #{distancia} km é #{litros_consumidos} litros"
+valor = litros_consumidos * preco
+puts "O valor que será gasto em reais para rodar esses kms é R$ #{valor}"
 
 #Questão 1.18 Crie um script em Ruby que leia a distância a ser percorrida e a velocidade média de um veículo. 
 #O script deve calcular e mostrar o tempo em que o veículo chegará ao seu destino.
