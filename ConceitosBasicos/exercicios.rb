@@ -151,11 +151,35 @@ puts "O valor de litros consumidos em #{distancia} km é #{litros_consumidos} li
 valor = litros_consumidos * preco
 puts "O valor que será gasto em reais para rodar esses kms é R$ #{valor}"
 
+
+
 #Questão 1.18 Crie um script em Ruby que leia a distância a ser percorrida e a velocidade média de um veículo. 
 #O script deve calcular e mostrar o tempo em que o veículo chegará ao seu destino.
+
+distancia = gets.chomp.to_f
+velocidade_media = gets.chomp.to_f
+tempo = velocidade_media / distancia
+puts "O tempo em que o carro chegará ao seu destino em #{distancia} km e tendo como velocidade média #{velocidade_media}km é #{tempo}h"
+
 
 #Questão 1.19 Crie um script em Ruby que leia as variáveis inteiras n1 e n2 e troque o valor dessas variáveis. 
 #Isto é, n1 deve ficar com o valor de n2 e n2 deve ficar com o valor de n1. Em seguida mostre os valores depois da troca.
 
+n1 = gets.chomp.to_i
+n2 = gets.chomp.to_i
+n3 = 0
+puts "O valores informados é n1 = #{n1} e n2 = #{n2}"
+n3 = n1
+n1 = n2
+n2 = n3
+puts "Os valores trocados são n1 = #{n1} e n2 = #{n2} "
+
+
 #Questão 1.20 Crie um script em Ruby que leia uma temperatura em Celsius e a converte para Fahrenheit. 
 #Para converter de Celsius para Fahrenheit use a seguinte fórmula: F = 9 * C/5 + 32
+
+c = gets.chomp.to_f
+f = 0
+f = 9 * c/5 + 32
+puts "O valor informado em Fahrenheit é #{f}"
+
