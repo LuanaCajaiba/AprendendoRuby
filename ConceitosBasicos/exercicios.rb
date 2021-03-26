@@ -105,8 +105,16 @@ puts "Resto da divisão: #{x % y}"
 salario = gets.chomp.to_f
 puts "O salário com o reajuste de 7% é #{salario * 1.07}"
 
+
+
 #Questão 1.14 Crie um script em Ruby que leia o salário de um funcionário e uma porcentagem de reajuste. 
 #O script deve calcular e mostrar o salário reajustado.
+
+salario = gets.chomp.to_f
+porcentagem = gets.chomp.to_f
+i = porcentagem/100 + 1
+puts "O salário reajustado é #{salario * i}"
+
 
 
 
